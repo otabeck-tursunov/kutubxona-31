@@ -76,3 +76,7 @@ class Record(models.Model):
         if self.talaba and self.kitob:
             return f"{self.talaba}: {self.kitob}"
         return "-"
+
+
+class Test(models.Model):
+    name = models.CharField(max_length=150)
